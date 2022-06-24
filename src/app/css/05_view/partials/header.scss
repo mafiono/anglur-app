@@ -1,0 +1,227 @@
+/*============================================================================
+	#Header
+==============================================================================*/
+.header {
+
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background: #1B1544;
+	z-index: 100;
+
+	&__link {
+
+		color: white;
+		transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+		&:hover {
+
+			color: $colorLink;
+			text-decoration: none;
+		}
+	}
+}
+
+.header-top {
+	
+	background: linear-gradient(180deg, #0C0326 0%, #3B097B 100%);
+
+	&__inner {
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 60px;
+		height: 50px;
+	}
+
+	&__logo {
+
+		align-self: flex-start;
+	}
+
+	&__login {
+
+		display: flex;
+
+		.button-login {
+
+			margin-left: 20px;
+		}
+	}
+
+	&__hamburger {
+
+		margin-top: 3px;
+	}
+}
+
+.header-main {
+
+	padding: 11px 0;
+
+	&__nav {
+
+		margin: 0 138px;
+	}
+}
+
+.main-nav {
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__item {
+
+		display: flex;
+		align-items: center;
+		font-size: 20px;
+		font-weight: $regular;
+		position: relative;
+		transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+		img {
+
+			margin-right: 4px;
+		}
+
+		span {
+
+			position: relative;
+			
+			&::before {
+
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 1px;
+				width: 100%;
+				background: $colorLink;
+				transform: translateY(4px);
+				opacity: 0;
+				transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+			}
+		}
+		
+		&.active {
+
+			color: $colorLink;
+
+			span::before {
+
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
+
+		&:not(.active):hover {
+
+			span::before {
+
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
+
+		&:hover {
+
+			color: $colorLink;
+		}
+	}
+}
+
+@include _1024 {
+
+	.header-top {
+
+		background: linear-gradient(180deg, #280759 0%, rgba(65, 7, 89, 0.6) 100%);
+
+		&__inner {
+
+			padding: 0 0;
+		}
+
+		&__login,
+		&__privacy {
+
+			display: none;
+		}
+		
+	}
+
+	.header-main {
+
+		display: none;
+	}
+
+	.site-logo {
+
+		img {
+
+			max-width: 140px;
+		}
+	}
+
+	.mobile-login {
+
+		img {
+
+			width: 34px;
+		}
+	}
+}
+
+@include _768 {
+
+	.header-top {
+
+		&__inner {
+
+			height: 35px;
+		}
+
+		&__hamburger {
+
+			margin-top: 4px;
+		}
+	}
+
+	.site-logo {
+
+		img {
+
+			max-width: 93px;
+		}
+	}
+
+	.mobile-login {
+
+		img {
+
+			width: 100%;
+		}
+	}
+
+	.hamburger-box {
+
+		width: 30px;
+		height: 18px;
+	}
+
+	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+
+		width: 30px;
+		height: 1px;
+	}
+
+	.hamburger-inner::before {
+		top: -8px;
+	}
+
+	.hamburger--collapse .hamburger-inner::after {
+
+		top: -16px;
+	}
+}

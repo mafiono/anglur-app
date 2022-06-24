@@ -1,0 +1,98 @@
+/*============================================================================
+	#COMMON
+==============================================================================*/
+
+.site {
+	position: relative;
+	max-width: 1920px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 100px;
+
+	&__content {
+
+		padding: 1px;
+	}
+}
+
+.site-content {
+
+	padding: 15px 0 40px;
+
+	display: flex;
+	flex-direction: column-reverse;
+	background: linear-gradient(180deg, rgba(15, 6, 73, 0.7) 0%, rgba(15, 6, 73, 0.8) 7.81%, rgba(15, 6, 73, 0.9) 23.96%, #0F0649 100%);
+	// background-attachment: fixed;
+}
+
+.container {
+
+	max-width: 928px;
+	padding: 0 16px;
+	margin: 0 auto;
+
+	&--large {
+
+		max-width: 1376px;
+	}
+}
+
+.section {
+
+	margin: 15px 0;
+}
+
+.mfp-bg {
+
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.mfp-iframe-holder .mfp-content {
+
+	max-width: 1040px;
+}
+
+.mobile-only {
+
+	display: none;
+}
+
+
+@include _1024 {
+
+	.site {
+
+		padding-top: 50px;
+	}
+
+	.mobile-only {
+
+		display: block;
+	}
+}
+
+@include _768 {
+
+	.site {
+
+		padding-top: 35px;
+	}
+
+	.site-content {
+
+		background: #463F70;;
+	}
+
+	.section {
+
+		margin: 10px 0;
+	}
+}
+
+@include _485 {
+
+	.container {
+
+		padding: 0 8px;
+	}
+}

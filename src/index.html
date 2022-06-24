@@ -1,13 +1,447 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Casino</title>
-  <base href="/">
+<!DOCTYPE html>
+<html lang="ru" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title _msthash="149916" _msttexthash="76336">Casino</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!--== Preload Fonts -->
+  <link rel="preload" href="https://iseegor.github.io/casino/fonts/Roboto-Regular.woff2" as="font" type="font/woff" crossorigin="">
+  <link rel="preload" href="https://iseegor.github.io/casino/fonts/Roboto-Bold.woff2" as="font" type="font/woff" crossorigin="">
+
+  <!--== favicon  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://iseegor.github.io/casino/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://iseegor.github.io/casino/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://iseegor.github.io/casino/favicon/favicon-16x16.png">
+  <link rel="manifest" href="https://iseegor.github.io/casino/favicon/site.webmanifest">
+  <link rel="mask-icon" href="https://iseegor.github.io/casino/favicon/safari-pinned-tab.svg" color="#264066">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="./app/css/vendor.css">
+  <link rel="stylesheet" href="./app/css/index.css">
+  <script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script></head>
+
+<body class="body" id="body" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+<div class="site">
+
+  <header class="header site__header">
+    <div class="header__top header-top">
+      <div class="container container--large">
+        <div class="header-top__inner">
+
+          <div class="header-top__item header-top__hamburger mobile-only">
+            <button class="hamburger hamburger--collapse" type="button">
+								<span class="hamburger-box">
+									<span class="hamburger-inner"></span>
+								</span>
+            </button>
+          </div>
+          <div class="header-top__item header-top__privacy">
+            <noindex>
+              <a href="https://iseegor.github.io/casino/home.html#" class="header__link link-icon">
+                <img src="./assets/img/icon-privacy-policy.png" alt="" width="25">
+                <span _msthash="2839395" _msttexthash="231452">Privacy Policy</span>
+              </a>
+            </noindex>
+          </div>
+          <div class="header-top__item header-top__logo">
+            <div class="site-logo">
+              <img src="./assets/img/logo.png" alt="" width="169">
+            </div>
+          </div>
+          <div class="header-top__item header-top__login">
+            <noindex>
+              <a href="https://iseegor.github.io/casino/home.html#" class="button-login button-login--color" _msthash="2304354" _msttexthash="79027"> Sign up </a>
+            </noindex>
+            <noindex>
+              <a href="https://iseegor.github.io/casino/home.html#" class="button-login" _msthash="2304601" _msttexthash="112255"> Entrance </a>
+            </noindex>
+          </div>
+          <div class="header-top__item header-top__login-mobile mobile-only">
+            <noindex>
+              <a href="https://iseegor.github.io/casino/home.html#" class="mobile-login">
+                <img src="./assets/img/icon-singin.svg" alt="">
+              </a>
+            </noindex>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__main header-main">
+      <div class="container container--large">
+        <div class="header-main__inner">
+          <nav class="header-main__nav main-nav">
+            <a href="https://iseegor.github.io/casino/home.html#" class="main-nav__item active">
+              <img src="./assets/img/icon-casino.png" alt="" width="25px">
+              <span _msthash="2075125" _msttexthash="43979">Home</span>
+            </a>
+            <a href="https://iseegor.github.io/casino/home.html#" class="main-nav__item ">
+              <img src="./assets/img/icon-gift.png" alt="" width="25px">
+              <span _msthash="2075333" _msttexthash="97266">Bonuses</span>
+            </a>
+            <a href="https://iseegor.github.io/casino/home.html#" class="main-nav__item ">
+              <img src="./assets/img/icon-slot-machine.png" alt="" width="25px">
+              <span _msthash="2075541" _msttexthash="205816">Slot machines</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-aside" _msthidden="5">
+    <div class="mobile-aside__container" _msthidden="5">
+      <nav class="mobile-menu" _msthidden="5">
+        <a href="https://iseegor.github.io/casino/home.html#" class="mobile-menu__item active" _msthash="828659" _msttexthash="981383" _msthidden="1">Главная</a>
+        <a href="https://iseegor.github.io/casino/home.html#" class="mobile-menu__item" _msthash="828776" _msttexthash="803621" _msthidden="1">Бонусы</a>
+        <a href="https://iseegor.github.io/casino/home.html#" class="mobile-menu__item" _msthash="828893" _msttexthash="2955810" _msthidden="1">Игровые автоматы</a>
+        <a href="https://iseegor.github.io/casino/home.html#" class="mobile-menu__item mobile-menu__item--small" _msthash="829010" _msttexthash="7143656" _msthidden="1">Политика конфиденциальности</a>
+        <a href="https://iseegor.github.io/casino/home.html#" class="mobile-menu__item mobile-menu__item--small" _msthash="829127" _msttexthash="1183455" _msthidden="1">Контакты</a>
+      </nav>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="site__content site-content">
+
+    <!-- main text section start -->
+    <main class="section section-main">
+      <div class="container">
+        <div class="section-main__inner">
+          <header class="section-main__header">
+            <h1 class="section-main__title" _msthash="1739296" _msttexthash="551928"> First Casino Online Casino </h1>
+          </header>
+          <div class="section-main__body">
+
+            <!-- typography block start -->
+            <div class="section-main__typogrephy typography">
+
+              <p _msthash="1865513" _msttexthash="113025120">If you have not yet chosen a good gaming platform, then The First Casino online casino is ideal for gambling. Despite the fact that the project was created in 2020, the institution took first place in the Ukrainian gambling market. Hundreds of slot machines, slots, table games are offered to visitors. The portal has an international license issued by the island state of Curacao. This document allows you to conduct a legal gambling business in many countries of Europe and Asia.</p>
+
+              <p _msthash="1865630" _msttexthash="75321883">In addition, the owners have already received a Ukrainian license, which guarantees customers fair play and the correct operation of the random number generator on all emulators. Online casino First Casino is constantly evolving, new devices are being added, there is an update. The technical service, working around the clock, ensures the stable operation of all sections of the site.</p>
+
+              <div class="responsive-table">
+                <table>
+                  <tbody>
+                  <tr>
+                    <td _msthash="4138979" _msttexthash="286416">Official website</td>
+                    <td _msthash="4139109" _msttexthash="177827">First Casino</td>
+                    <td _msthash="4139239" _msttexthash="177827">First Casino</td>
+                  </tr>
+                  <tr>
+                    <td _msthash="4139174" _msttexthash="261651">Casino Versions</td>
+                    <td _msthash="4139304" _msttexthash="850343">Web-version, mobile, application</td>
+                    <td _msthash="4139434" _msttexthash="850343">Web-version, mobile, application</td>
+                  </tr>
+                  <tr>
+                    <td _msthash="4139369" _msttexthash="138320">Providers</td>
+                    <td _msthash="4139499" _msttexthash="1697345">Endorphina, Igrosoft, Amatic, Evoplay, Yggdrasil...</td>
+                    <td _msthash="4139629" _msttexthash="1697345">Endorphina, Igrosoft, Amatic, Evoplay, Yggdrasil...</td>
+                  </tr>
+                  <tr>
+                    <td _msthash="4139564" _msttexthash="97266">Bonuses</td>
+                    <td _msthash="4139694" _msttexthash="1748877">For registration, account replenishment, cashback</td>
+                    <td _msthash="4139824" _msttexthash="1748877">For registration, account replenishment, cashback</td>
+                  </tr>
+                  <tr>
+                    <td _msthash="4139759" _msttexthash="271440">Payment systems</td>
+                    <td _msthash="4139889" _msttexthash="271440">Payment systems</td>
+                    <td>
+                      <div class="payment-systems">
+                        <img src="./assets/img/plus21.png" alt="" width="25">
+                        <img src="./assets/img/visa.png" alt="" width="41">
+                        <img src="./assets/img/mastercard.png" alt="" width="33">
+                        <img src="./assets/img/privat24.png" alt="" width="23">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td _msthash="4139954" _msttexthash="116779">Currency</td>
+                    <td _msthash="4140084" _msttexthash="22919">UAH</td>
+                    <td _msthash="4140214" _msttexthash="22919">UAH</td>
+                  </tr>
+                  <tr>
+                    <td _msthash="4140149" _msttexthash="327613">Technical support</td>
+                    <td _msthash="4140279" _msttexthash="327613">Technical support</td>
+                    <td _msthash="4140409" _msttexthash="22607">24/7</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- table of content start -->
+              <div class="table-of-content">
+                <div class="table-of-content__title" _msthash="2424552" _msttexthash="96798">Content</div>
+                <ul>
+                  <li>
+                    <noindex>
+                      <a href="https://iseegor.github.io/casino/home.html#test" _msthash="2724137" _msttexthash="570011">First Casino Registration</a>
+                    </noindex>
+                  </li>
+                  <li>
+                    <noindex>
+                      <a href="https://iseegor.github.io/casino/home.html#" _msthash="2724267" _msttexthash="1246245">What is the minimum deposit at First Casino?</a>
+                    </noindex>
+                  </li>
+                  <li>
+                    <noindex>
+                      <a href="https://iseegor.github.io/casino/home.html#" _msthash="2724397" _msttexthash="1203592">Slot Machines Furst Casino - online casino $</a>
+                    </noindex>
+                  </li>
+                  <li>
+                    <noindex>
+                      <a href="https://iseegor.github.io/casino/home.html#" _msthash="2724527" _msttexthash="152568">Live Casino</a>
+                    </noindex>
+                  </li>
+                  <li>
+                    <noindex>
+                      <a href="https://iseegor.github.io/casino/home.html#" _msthash="2724657" _msttexthash="332358">Features of 1 Casino</a>
+                    </noindex>
+                  </li>
+                  <li>
+                    <noindex>
+                      <a href="https://iseegor.github.io/casino/home.html#" _msthash="2724787" _msttexthash="1249846">Security and Honesty of First Casino Casino </a>
+                    </noindex>
+                  </li>
+                </ul>
+                <!-- table of content end -->
+
+              </div>
+
+              <h2 _msthash="1926613" _msttexthash="332358">Features of 1 Casino</h2>
+              <p _msthash="1866215" _msttexthash="2448524">An account on the portal gives the owner a lot of opportunities:</p>
+
+              <ul>
+                <li _msthash="2275026" _msttexthash="338182">Bet with real money.</li>
+                <li _msthash="2275156" _msttexthash="170794">Get bonuses.</li>
+                <li _msthash="2275286" _msttexthash="2024490">Participate in online tournaments and loyalty program.</li>
+                <li _msthash="2275416" _msttexthash="3885687">Communicate with technical support and withdraw money to the specified details.</li>
+              </ul>
+
+              <p _msthash="1866449" _msttexthash="25361622">Registration at Furst Casino takes a few seconds. To do this, click the button with the appropriate name, it is located in the upper right corner of the main window. A form will open, with several fields, they need to be filled:</p>
+
+              <ol>
+                <li _msthash="2337465" _msttexthash="1122719">A valid e-mail box or mobile phone number.</li>
+                <li _msthash="2337595" _msttexthash="4314830">Password. It should be complex using special characters, no shorter than 8 characters.</li>
+              </ol>
+
+              <p _msthash="1926639" _msttexthash="20925268">After all the fields of the registration form are filled, you need to confirm the account. This is done through a link in a reply letter or a one-time password from an SMS message (if a mobile number is used). </p>
+
+              <p _msthash="1926769" _msttexthash="38474878">Please note that only users who have reached the age of 21 can have an account. The administration has the right to demand from the client supporting documents for identity verification. In this case, the user needs to send a scanned copy of the passport to the specified e-mail.</p>
+
+              <p _msthash="1926899" _msttexthash="44068765">You can log in to the personal account of the First Casino online casino using accounts in social networks. Owners of accounts in Google, Facebook and Vkontakte can use the corresponding icon. The export of personal data will occur automatically. The visitor will need to come up with a password.</p>
+
+              <p _msthash="1927029" _msttexthash="25382461">Every newcomer is entitled to a sign-up bonus. The gift is activated when replenishing the deposit in the amount of 100 and 500 UAH. The starter pack includes 111% (125%) in points and 111 (150) free spins on the Sun of Egypt slot machine.</p>
+
+              <h2 _msthash="1988298" _msttexthash="1246245">What is the minimum deposit at First Casino?</h2>
+
+              <p _msthash="1927289" _msttexthash="32923280">To fund your account, you need to register at Furst Casino. If you have an account, enter the login and password specified in the form. The minimum deposit is 50 UAH. Replenishment of the account is carried out through the "Cashier" menu in the following ways:</p>
+
+              <ul>
+                <li _msthash="2339857" _msttexthash="345176">By Visa/Mastercard.</li>
+                <li _msthash="2339987" _msttexthash="105612">Privat24.</li>
+                <li _msthash="2340117" _msttexthash="614380">iBOX self-service terminal.</li>
+                <li _msthash="2340247" _msttexthash="187317">Global Money.</li>
+              </ul>
+
+              <p _msthash="1927549" _msttexthash="60684403">You can control the receipt of funds in your personal account, the "Cashier" menu. In case of any problems, contact technical support immediately. Specialists will help to solve problems associated with the transfer of funds to the deposit. Replenishment of the casino account with a minimum deposit opens up wide opportunities for a paid game.</p>
+
+              <h2 _msthash="1988870" _msttexthash="1203592">Slot Machines Furst Casino - online casino $</h2>
+
+              <p _msthash="1926626" _msttexthash="23603008">The online club is famous for a large selection of emulators for every taste. Navigation through the catalogs is carried out using the menu, it is located at the top of the window and consists of the following items:</p>
+
+              <ol>
+                <li _msthash="2337868" _msttexthash="121017">All games.</li>
+                <li _msthash="2337998" _msttexthash="2964962">Top slots - this section contains the best devices, according to users.</li>
+                <li _msthash="2338128" _msttexthash="2795286">Table - catalog with pokers, blackjack, baccarat, virtual roulette.</li>
+              </ol>
+
+              <p _msthash="1926886" _msttexthash="91197054">All simulators are licensed. This means that the user is guaranteed fair play, a high percentage of return (RTP), it reaches 96.7% and the correct operation of the RNG (random number generator). The administration cooperates with such well-known software developers as: Igrosoft, Yggdrasil, Booongo, Novomatic, Playson, Platipus, Evolution Gaming, Evoplay. The site has a quick search by provider and the name of the simulator.</p>
+
+              <p _msthash="1927016" _msttexthash="109594823">Popular slots are located on the main page of the project. There you can find such masterpieces as: Book Of Ra, Seven on Fire, 100 Cats, Santa's Village, Fruit Cocktail, Jump. A huge variety of storylines and scenarios allows the client to feel like an archaeologist, spy, resident, adventurer. There are classic "one-armed bandits" with simple controls and three reels. For fans of new products, a separate catalog with emulators that support 3D graphics has been prepared.</p>
+
+              <p _msthash="1927146" _msttexthash="95400656">The paid version requires registration on the website of the online institution and a positive balance on the deposit. Replenish your account with a minimum amount, and activate the machine in paid mode. The rules of most devices are standards. Gambler needs to collect three or more identical icons on one of the paylines. The scatter symbol gives free spins, the scatter icon helps to form a prize combination by replacing the pictures.</p>
+
+              <p _msthash="1927276" _msttexthash="175453980">Almost every machine includes a bonus round or a doubling game. Depending on the genre, the user is asked to perform certain actions. For example, in the Crazy Monkey device, an additional round consists of several levels. Controlling a monkey, the gambler must catch bananas and dodge heavy objects flying into the head. In the Sharky slot, the traveler needs to get to a desert island by jumping on the fins of dolphins. However, there are also sharks in the sea, a meeting with them will lead to the end of the mission. Successful completion of all levels is rewarded with a large cash prize or jackpot.</p>
+
+              <p _msthash="1927406" _msttexthash="62465546">The risk round for doubling is present in Igrosoft devices. After each successful spin, the visitor is given a chance to double the winnings by playing cards with the dealer. The task is simple, you need to guess the color of the suit. You need to take risks very carefully, the wrong answer leads to the redemption of the prize and return to the main window.</p>
+
+              <p _msthash="1927536" _msttexthash="35819771">Beginners are advised to take advantage of classic slots with three reels. Fruit and berry theme is one of the most common among the devices. In order not to lose all the money at once, try to use the minimum bets. In case of failure, you can always switch to another slot.</p>
+
+              <p _msthash="1927666" _msttexthash="118885767">Free slot machines are activated by the "Demo" key. The trial version does not require authorization, and wrappers are used as a means of payment. Demo versions are ideal for users who want to get acquainted with new products, better understand the rules, develop their own strategy of behavior, learn technical characteristics. In this case, you do not risk the real currency. There are also disadvantages, the winnings received in the demo versions of slot machines can not be withdrawn.</p>
+
+              <p _msthash="1927796" _msttexthash="49760113">To prepare the emulator for work, you need to select the number of active lines (if such an option is available) and set the rate, specifying the denomination of the chip. The whole procedure takes a few seconds. Small digital indicators show the current settings, and a large button starts the rotation of the reels.</p>
+
+              <h2 id="test" _msthash="49595" _msttexthash="152568">Live Casino</h2>
+
+              <p _msthash="1926873" _msttexthash="134924283">A special pride of the institution are life games. Playing with live dealers is a pleasure, the presenters greet you in a specially equipped studio, in evening costumes. Live-casino from the company Evolution Gaming are famous for the high quality of broadcasting and the realism of the halls. To connect, you'll need high-speed Internet and the latest version of your browser. Broadcasting is carried out using several high-resolution cameras. The Live-Casino section includes the following gambling entertainment:</p>
+
+              <ul>
+                <li _msthash="2339207" _msttexthash="126230">Roulette.</li>
+                <li _msthash="2339337" _msttexthash="67951">Poker.</li>
+                <li _msthash="2339467" _msttexthash="118677">Baccarat.</li>
+                <li _msthash="2339597" _msttexthash="138138">Blackjack.</li>
+              </ul>
+
+              <p _msthash="1927133" _msttexthash="49793523">Playing for money in a life casino provides for the presence of a minimum amount on the deposit. Therefore, it is necessary to take care in advance that the required amount is on the game account. At the same time, the client interacts not only with the presenter, but also with other players who connect to the studio.</p>
+
+              <p _msthash="1927263" _msttexthash="105772472">In fact, Life emulators are no different from desktop counterparts, except for the presence of a live presenter. The rules are identical. Blackjack is especially popular among portal visitors. This card competition allows you to earn a good amount with minimal knowledge. The client does not need to learn and memorize combinations, it is enough to beat the dealer, scoring more points, but not exceeding 21. The interactive panel makes it much easier to manage.</p>
+
+              <h2 _msthash="1988558" _msttexthash="1249846">Security and Honesty of First Casino Casino</h2>
+
+              <p _msthash="1927523" _msttexthash="37591203">The security of users' personal data is the cornerstone of the institution's excellent reputation. All confidential information is encrypted using an SSL certificate installed on all portal pages. Financial transactions use secure 3D Secure communication channels.</p>
+
+              <p _msthash="1927653" _msttexthash="18194202">Gamblers can set up two-factor authentication to prevent account theft. For authorization, you will need to enter not only a password, but also a one-time code received on a mobile phone.</p>
+
+              <p _msthash="1927783" _msttexthash="89982009">The virtual club has successfully passed certification and audit by the state commission. The result of this check was a guarantee of honesty and timely payments. Withdrawal of funds is carried out on Visa and MasterCard cards of Ukrainian banks. When the minimum amount is reached, the client gets the opportunity to cash out the winnings by specifying the details. Processing of the application lasts no more than 24 hours.</p>
+
+              <p _msthash="1927913" _msttexthash="47852532">A technical service has been created for the stable operation of the portal. Specialists not only monitor the proper functioning of all systems, but also solve user problems. An online chat is used to contact the technical service. As a rule, specialists respond to applications promptly and try to help 24/7.</p>
+
+              <p _msthash="1926860" _msttexthash="63883183">In the event of a failure in the portal, there are mirror sites. They also help to bypass the blocking if the gambler is in another country where gambling is banned. New technologies, HTML5 and JavaScript, Flash elements are being actively introduced and used. The site of the institution is compatible with all modern operating systems: Windows, Linux, macOS. </p>
+
+              <p _msthash="1926990" _msttexthash="22029007">Owners of smartphones and tablets will easily open the site and launch a slot machine on their device. To do this, you need to have a mobile browser of the latest version. The site scales to small phone screens. </p>
+
+            </div>
+            <!-- typography block end -->
+
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- main text section end -->
+
+    <!-- games block start -->
+    <section class="section section-games">
+      <div class="container">
+        <div class="section-games__inner">
+          <div class="games">
+            <div class="games__list">
+              <div class="game-card">
+                <div class="game-card__media">
+                  <img class="" data-src="images/fruit-cocktail.jpg" alt="" src="./assets/img/fruit-cocktail.jpg">
+
+                  <noindex>
+                    <a href="https://iseegor.github.io/casino/home.html#" class="button-play" _msthash="3912389" _msttexthash="45591">Play</a>
+                  </noindex>
+                </div>
+                <noindex>
+                  <a href="https://apiv2.1casinowin.com/games/seo-demo?term=fruit-cocktail&amp;provider=igrosoft" class="game-card__link js-modal" _msthash="3370354" _msttexthash="43875">Demo</a>
+                </noindex>
+              </div>
+              <div class="game-card">
+                <div class="game-card__media">
+                  <img class="" data-src="images/fruits---jokers--40-lines.jpg" alt="" src="./assets/img/fruits---jokers--40-lines.jpg">
+
+                  <noindex>
+                    <a href="https://iseegor.github.io/casino/home.html#" class="button-play" _msthash="3912792" _msttexthash="45591">Play</a>
+                  </noindex>
+                </div>
+                <noindex>
+                  <a href="https://apiv2.1casinowin.com/games/seo-demo?term=fruits-and-jokers-40-lines&amp;provider=playson" class="game-card__link js-modal" _msthash="3370679" _msttexthash="43875">Demo</a>
+                </noindex>
+              </div>
+              <div class="game-card">
+                <div class="game-card__media">
+                  <img class="" data-src="images/sun-of-egypt.jpg" alt="" src="./assets/img/sun-of-egypt.jpg">
+
+                  <noindex>
+                    <a href="https://iseegor.github.io/casino/home.html#" class="button-play " _msthash="3913195" _msttexthash="45591">Play</a>
+                  </noindex>
+                </div>
+                <noindex>
+                  <a href="https://apiv2.1casinowin.com/games/seo-demo?term=sun-of-egypt&amp;provider=booongo" class="game-card__link js-modal" _msthash="3371004" _msttexthash="43875">Demo</a>
+                </noindex>
+              </div>
+              <div class="game-card">
+                <div class="game-card__media">
+                  <img class="" data-src="images/fruit-cocktail.jpg" alt="" src="./assets/img/fruit-cocktail.jpg">
+
+                  <noindex>
+                    <a href="https://iseegor.github.io/casino/home.html#" class="button-play" _msthash="3913598" _msttexthash="45591">Play</a>
+                  </noindex>
+                </div>
+                <noindex>
+                  <a href="https://apiv2.1casinowin.com/games/seo-demo?term=fruit-cocktail&amp;provider=igrosoft" class="game-card__link js-modal" _msthash="3371329" _msttexthash="43875">Demo</a>
+                </noindex>
+              </div>
+              <div class="game-card">
+                <div class="game-card__media">
+                  <img class="" data-src="images/fruits---jokers--40-lines.jpg" alt="" src="./assets/img/fruits---jokers--40-lines.jpg">
+
+                  <noindex>
+                    <a href="https://iseegor.github.io/casino/home.html#" class="button-play" _msthash="3914001" _msttexthash="45591">Play</a>
+                  </noindex>
+                </div>
+                <noindex>
+                  <a href="https://apiv2.1casinowin.com/games/seo-demo?term=fruits-and-jokers-40-lines&amp;provider=playson" class="game-card__link js-modal" _msthash="3371654" _msttexthash="43875">Demo</a>
+                </noindex>
+              </div>
+              <div class="game-card">
+                <div class="game-card__media">
+                  <img class="" data-src="images/sun-of-egypt.jpg" alt="" src="./assets/img/sun-of-egypt.jpg">
+
+                  <noindex>
+                    <a href="https://iseegor.github.io/casino/home.html#" class="button-play " _msthash="3914404" _msttexthash="45591">Play</a>
+                  </noindex>
+                </div>
+                <noindex>
+                  <a href="https://apiv2.1casinowin.com/games/seo-demo?term=sun-of-egypt&amp;provider=booongo" class="game-card__link js-modal" _msthash="3371979" _msttexthash="43875">Demo</a>
+                </noindex>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- games block end -->
+
+    <!-- banner block start -->
+    <section class="section section-banner">
+      <div class="container">
+        <div class="section-banner__inner">
+
+          <noindex>
+            <a href="https://iseegor.github.io/casino/home.html#" class="section-banner__item">
+              <img src="./assets/img/banner.jpg" alt="">
+            </a>
+          </noindex>
+        </div>
+      </div>
+    </section>
+    <!-- banner block end -->
+
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__text">
+          <div _msthash="1413659" _msttexthash="298051">LLC «FORST ELEMENT»</div>
+          <div _msthash="1413802" _msttexthash="2975297">License dated 26.02.2021 (decision on issuing a license No. 56 dated 18.02.2021)</div>
+          <div _msthash="1413945" _msttexthash="2574195">Total winning percentage (theoretical return to the player) 94%-98%</div>
+        </div>
+        <div class="footer__copyrights">
+          <div _msthash="1413880" _msttexthash="10354565">21+ ©️ 2021 first.ua All rights reserved.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- site end -->
+
+
+
+<!-- <script src="jquery.min.js"></script> -->
+<script src="./app/js/vendor.js"></script>
+<script src="./app/js/index.js"></script>
+
+
 </body>
 </html>

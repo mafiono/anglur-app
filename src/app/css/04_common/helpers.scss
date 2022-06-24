@@ -1,0 +1,38 @@
+.overflow {
+	overflow: hidden;
+}
+
+.pixelated {
+    -ms-interpolation-mode: nearest-neighbor;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: pixelated;
+}
+
+.link {
+	color: $colorBase;
+	text-decoration: underline;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.list {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.link-icon {
+
+	display: flex;
+	align-items: center;
+
+	img {
+
+		margin-right: 2px;
+	}
+}
+
+

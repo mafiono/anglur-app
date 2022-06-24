@@ -1,0 +1,116 @@
+/*============================================================================
+	#BREADCRUMBS
+==============================================================================*/
+.breadcrumb {
+
+	padding: 24px 0px;
+	
+	&__list {
+
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	&__item {
+
+		display: block;
+		text-decoration: none;
+		color: $colorBase;
+		fill: $colorBase;
+		transition: color 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+		.icon-home {
+
+			height: 24px;
+			width: 24px;
+			fill: inherit;
+			transition: fill 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+		}
+
+		&--current {
+
+			color: $colorSecondary;
+			max-width: 60%;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		&:not(.breadcrumb__item--current):hover {
+
+			// text-decoration: underline;
+			color: $colorSecondary;
+			fill: $colorSecondary;
+		}
+	}
+
+	&__separator {
+		
+		line-height: 0;
+		margin: 0 13px;
+
+		.icon {
+
+			width: 16px;
+			height: 16px;
+			fill: $colorBase;
+		}
+	}
+}
+
+@include _1024 {
+
+	.breadcrumb {
+
+		padding: 16px 0px;
+	}
+}
+
+@include _768 {
+
+	.breadcrumb {
+
+		&__item {
+
+			font-size: 14px;
+
+			.icon-home {
+
+				width: 18px;
+				height: 18px;
+			}
+		}
+
+		&__separator {
+
+			margin: 0 10px;
+
+			.icon {
+
+				width: 14px;
+    			height: 14px;
+			}
+		} 
+	}
+}
+
+@include _485 {
+
+	.breadcrumb {
+
+		&__item {
+
+			font-size: 12px;
+		}
+
+		&__separator {
+
+			.icon {
+
+				width: 12px;
+    			height: 12px;
+			}
+		} 
+	}
+}

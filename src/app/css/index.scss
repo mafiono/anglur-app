@@ -1,0 +1,51 @@
+/* settings
+===================================================*/
+@import '../../../casino-html/src/scss/01_settings/variables';
+@import '../../../casino-html/src/scss/01_settings/mixin';
+@import '../../../casino-html/src/scss/01_settings/normalize';
+
+
+/* vendor
+===================================================*/
+// @import 'node_modules/bootstrap/scss/bootstrap-grid';
+
+/* global
+===================================================*/
+@import '../../../casino-html/src/scss/02_global/keyframes';
+@import '../../../casino-html/src/scss/02_global/fonts';
+@import '../../../casino-html/src/scss/02_global/base';
+@import '../../../casino-html/src/scss/02_global/typography';
+
+/* ui/ux
+===================================================*/
+@import '../../../casino-html/src/scss/03_ui/buttons';
+@import '../../../casino-html/src/scss/03_ui/icons';
+@import '../../../casino-html/src/scss/03_ui/form';
+@import '../../../casino-html/src/scss/03_ui/checkbox';
+@import '../../../casino-html/src/scss/03_ui/select';
+@import '../../../casino-html/src/scss/03_ui/hamburgers/hamburgers';
+
+/* common
+===================================================*/
+@import '../../../casino-html/src/scss/04_common/common';
+@import '../../../casino-html/src/scss/04_common/helpers';
+
+/* components
+===================================================*/
+@import '../../../casino-html/src/scss/05_view/components/mobile';
+@import '../../../casino-html/src/scss/05_view/components/breadcrumbs';
+@import '../../../casino-html/src/scss/05_view/components/pagination';
+@import '../../../casino-html/src/scss/05_view/components/section-main';
+@import '../../../casino-html/src/scss/05_view/components/games';
+@import '../../../casino-html/src/scss/05_view/components/banner';
+
+
+/* views
+===================================================*/
+@import '../../../casino-html/src/scss/05_view/partials/header';
+@import '../../../casino-html/src/scss/05_view/partials/footer';
+
+
+/* Modals
+===================================================*/
+@import '../../../casino-html/src/scss/05_view/partials/modals';

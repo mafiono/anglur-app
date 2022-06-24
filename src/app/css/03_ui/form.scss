@@ -1,0 +1,171 @@
+/*============================================================================
+	#FORM
+==============================================================================*/
+
+.form {
+
+	&__row {
+
+		margin-bottom: 24px;
+
+		&:last-child {
+
+			margin-bottom: 0;
+		}
+	}
+
+	&__group {
+
+		
+	}
+
+	&__label {
+
+		font-family: $fontPrimary;
+		color: $colorSecondary;
+		opacity: .5;
+		font-size: 16px;
+		font-weight: $regular;
+		line-height: 1.375;
+		margin-bottom: 12px;
+	} 
+
+	&__input {
+		font-family: $fontPrimary;
+		color: $colorSecondary;
+		font-size: 16px;
+		font-weight: $regular;
+		line-height: 1.375;
+		padding: 11px 16px;
+		border: 1px solid #D4D9E0;
+		border-radius: 16px;
+		width: 100%;
+		background: transparent;
+		transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+		&::placeholder {
+			transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+			color: #8D9AAE;
+		}
+
+		&:focus::placeholder {
+
+			opacity: 0;
+		}
+
+		&:focus {
+
+			border-color: $colorSecondary;
+		}
+
+		&:valid {
+
+			// border-color: $colorSecondary;
+		}
+	}
+
+	&__textarea {
+
+
+
+		&::placeholder {
+
+
+		}
+
+		&:focus::placeholder {
+
+			opacity: 0;
+		}
+	}
+
+	&__submit {
+
+		width: 100%;
+		min-width: 100%;
+	}
+
+}
+
+.form {
+
+	em.error {
+
+		color: red;
+		font-size: 12px;
+		display: block;
+		line-height: 18px;
+		margin-top: 4px;
+	}
+}
+
+.button-radio {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 5px;
+	
+	label {
+		display: block;
+		font-family: $fontPrimary;
+		color: $colorSecondary;
+		font-size: 16px;
+		font-weight: $regular;
+		line-height: 1.375;
+		padding: 11px 24px;
+		border: 1px solid #D4D9E0;
+		border-radius: 16px;
+		background: transparent;
+		transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+		position: relative;
+		cursor: pointer;
+	}
+
+	input[type="radio"] {
+
+		opacity: 0;
+		position: absolute;
+	}
+
+	input[type="radio"]:checked + label {
+
+		background: rgba(38, 64, 102, 0.055);
+		border-color: $colorSecondary;
+	}
+
+	&:hover {
+
+		label {
+
+			background: rgba(38, 64, 102, 0.055);
+		}
+	}
+}
+
+.promo-form {
+
+	.form__row {
+
+		margin-bottom: 16px;
+
+		&:last-child {
+
+			margin-bottom: 0;
+		}
+
+		&--submit {
+
+			margin-top: 24px;
+		}
+	}
+
+	.form__input {
+
+		border-color: $colorBase;
+		color: white;
+
+		&:focus {
+
+			box-shadow: 0 0 10px 4px rgba(141, 154, 174, 0.3);
+		}
+	}
+}

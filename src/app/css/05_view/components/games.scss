@@ -1,0 +1,194 @@
+/*============================================================================
+	#Games
+==============================================================================*/
+
+.section-games {
+
+	&__inner {
+
+		background: rgba(24, 18, 59, 0.5);
+		padding: 30px 70px;
+		border-radius: 3px;
+	}
+}
+
+.games {
+
+	&__list {
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: -16px;
+	}
+}
+
+.game-card {
+ 
+	max-width: 215px;
+	flex: 1 0 215px;
+	position: relative;
+	margin-bottom: 16px;
+
+	&__media {
+
+		padding-top: 100%;
+		position: relative;
+		overflow: hidden;
+		border-radius: 3px;
+		box-shadow: 0px 0px 10px 7px rgba(255, 247, 247, 0);
+		transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+
+		&::before {
+
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(48, 48, 48, 0.72);
+			z-index: 1;
+			opacity: 0;
+			transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+		}
+
+		img {
+
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+
+		&:hover {
+
+			box-shadow: 0px 0px 10px 7px rgba(255, 247, 247, 0.25);
+
+			&::before {
+
+				opacity: 1;
+			}
+
+			.button-play {
+
+				transform: translate(-50%, -50%);
+				opacity: 1;
+			}
+		}
+	}
+
+	noindex {
+
+		display: block;
+	}
+
+	.button-play {
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, 50%);
+		z-index: 1;
+		opacity: 0;
+	}
+
+	&__link {
+
+		text-align: center;
+		margin: 0 auto;
+		display: block;
+		font-weight: bold;
+		font-size: 18px;
+		color: #5329AF;
+		position: relative;
+		z-index: 1;
+		padding: 8px ;
+		transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+		&:hover {
+
+			color: white;
+		}
+	}
+
+	&:hover {
+
+
+	}
+}
+
+@include _892 {
+
+	.section-games {
+
+		&__inner {
+
+			padding: 30px 30px;
+		}
+	}
+}
+
+@include _768 {
+
+	.section-games {
+
+		&__inner {
+
+			padding: 15px 15px;
+		}
+	}
+
+	.games {
+
+		&__list {
+
+			max-width: 580px;
+    		margin: 0 auto;
+		}
+	}
+
+	.game-card {
+	
+
+		flex: 0 0 165px;
+		max-width: 165px;
+	}
+}
+
+@include _575 {
+
+	.games {
+
+		&__list {
+
+			max-width: 420px;
+    		margin: 0 auto;
+		}
+	}
+}
+
+@include _395 {
+
+	.game-card {
+	
+		flex: 0 0 145px;
+		max-width: 145px;
+	}
+}
+
+@media (max-width:350px) {
+
+	.section-games__inner {
+    	padding: 15px 10px;
+	}
+
+	.game-card {
+	
+		flex: 0 0 135px;
+		max-width: 135px;
+	}
+}

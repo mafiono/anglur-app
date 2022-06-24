@@ -1,0 +1,43 @@
+/*============================================================================
+	#Global
+==============================================================================*/
+html {
+	box-sizing: border-box;
+	height: 100%;
+	// scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	outline: none;
+}
+
+body {
+	height: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: top;
+}
+
+svg {
+	vertical-align: top;
+}
+
+// turn off arrows in type=number
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  appearance: none; 
+  margin: 0; 
+}
+
+noindex {
+
+	display: inline-flex;
+}

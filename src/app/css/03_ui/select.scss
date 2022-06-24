@@ -1,0 +1,102 @@
+/*============================================================================
+	#Select
+==============================================================================*/
+
+.select-checkbox {
+
+	width: 100%;
+	position: relative;
+
+	&__button {
+
+		width: 100%;
+
+		font-size: 14px;
+		line-height: 1.4;
+		border: 1px solid #b99aa9;
+		border-radius: 40px;
+		padding: 13px 22px 14px 22px;
+		padding: 13px 34px 14px 22px;
+		position: relative;
+		transition: border-color .2s linear, background .2s linear;
+		text-align: left;
+		background: white;
+		z-index: 1;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+		&::before {
+
+			content: '';
+			position: absolute;
+			right: 18px;
+			top: calc(50% - 3px);
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 6px 5.5px 0 5.5px;
+			border-color: #b99aa9 transparent transparent transparent;
+		}
+
+		&._active {
+
+			&::before {
+
+				border-width: 0px 5.5px 6px 5.5px;
+				border-color: transparent transparent #b99aa9 transparent;
+			}
+		}
+
+		&:hover {
+			// background: rgba(185, 154, 169, 0.1);
+			border-color: $colorBase;
+		}
+	}
+
+	&__list {
+		position: absolute;
+		margin: 0;
+		padding-left: 0;
+		list-style-type: none;
+		border: 1px solid #b99aa9;
+		border-top: none;
+		background: white;
+		// z-index: 1;
+		width: 100%;
+		padding: 44px 22px 20px 22px;
+		top: 22px;
+		border-bottom-right-radius: 24px;
+		border-bottom-left-radius: 24px;
+		display: none;
+	}
+
+	&__list-item {
+
+		margin-bottom: 10px;
+
+		&:last-child {
+
+			margin-bottom: 0;
+		}
+	}
+
+	.checkbox__label > span {
+
+		font-size: 14px;
+		align-items: flex-start;
+	}
+
+	.checkbox__label > span::before {
+
+		margin-top: 2px;
+		margin-right: 10px;
+	}
+
+	.checkbox__label > span::before,
+	.checkbox__label > span::after {
+
+		width: 20px;
+		height: 20px;
+	}
+}

@@ -1,0 +1,52 @@
+@mixin H1_Desktop() {
+	
+}
+
+@mixin _1400 {
+    @media (max-width: 1440px){
+        @content;
+    }
+}
+
+@mixin _1200 {
+    @media (max-width: 1240px){
+        @content;
+    }
+}
+
+@mixin _1024 {
+    @media (max-width: 1024px){
+        @content;
+    }
+}
+
+@mixin _892 {
+    @media (max-width: 891.98px){
+        @content;
+    }
+}
+
+@mixin _768 {
+    @media (max-width: 767.98px){
+        @content;
+    }
+}
+
+@mixin _575 {
+    @media (max-width: 575.98px){
+        @content;
+    }
+}
+
+@mixin _485 {
+    @media (max-width: 485.98px){
+        @content;
+    }
+}
+
+@mixin _395 {
+    @media (max-width: 395.98px){
+        @content;
+    }
+}
+

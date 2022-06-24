@@ -1,0 +1,104 @@
+/*============================================================================
+	#Pagination
+==============================================================================*/
+.pagination {
+
+	margin: 0 0 40px;
+	position: relative;
+	z-index: 1;
+	
+	display: flex;
+	justify-content: center;
+
+	.nav-links {
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.page-numbers {
+
+		display: block;
+		font-size: 18px;
+		font-weight: $medium;
+		line-height: 1.40;
+		color: black;
+		text-decoration: none;
+		margin: 0 12px;
+
+		
+		&:not(.dots):not(.current):hover {
+
+			text-decoration: underline;
+		}
+
+	}
+
+	.page-numbers.current {
+
+		position: relative;
+
+		&:before {
+
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 42px;
+			height: 42px;
+			border-radius: 100%;
+			background: $colorBase;
+			transform: translate(-50%, -50%);
+			z-index: -1;
+		}
+	}
+
+	.page-numbers.dots {
+
+		// margin: 0 24px;
+	}
+
+	.page-numbers.prev,
+	.page-numbers.next {
+
+		width: 42px;
+		height: 42px;
+		background: $colorSecondary;
+		border-radius: 100%;
+		fill: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 30px;
+		transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+		svg {
+
+			width: 20px;
+			height: 20px;
+			margin-left: 2px;
+		}
+
+	}
+
+	.page-numbers.prev {
+
+		margin-left: -72px;
+		transform: rotate(180deg);
+	}
+	.page-numbers.next {
+
+		margin-right: -72px;
+	}
+
+	.page-numbers.prev,
+	.page-numbers.next {
+
+		&:hover {
+
+			background: $colorPrimary;
+			fill: $colorSecondary;
+		}
+	}
+}
